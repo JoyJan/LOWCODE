@@ -1,0 +1,56 @@
+@for $i from 5 to 26 {
+  .mt-#{$i} {
+    display: block;
+    margin-top: 1px * $i;
+  }
+  .ml-#{$i} {
+    display: block;
+    margin-left: 1px * $i;
+  }
+  .mr-#{$i} {
+    display: block;
+    margin-right: 1px * $i;
+  }
+  .mb-#{$i} {
+    display: block;
+    margin-bottom: 1px * $i;
+  }
+}
+
+.g-flex--ac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.g-flex--bc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.g-flex--cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-flex--sc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.g-flex--ec {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.g-pos--a {
+  position: absolute;
+}
+
+.g-pos--r {
+  position: relative;
+}

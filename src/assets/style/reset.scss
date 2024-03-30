@@ -1,0 +1,70 @@
+/** 重置文本格式元素 **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dedfe1;
+    border-radius: 32px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background-color: #909399;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 32px;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** 重置表格元素 **/
+.el-overlay {
+  display: flex;
+  justify-content: center;
+}
+
+/** 覆盖全局el样式 **/
+.el-overlay-dialog {
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.el-dialog {
+  width: auto;
+  --el-dialog-margin-top: 8vh;
+}
+
+.el-image {
+  position: initial;
+}
+
+.el-link {
+  position: initial;
+}

@@ -1,0 +1,65 @@
+.v-link {
+  display: inline-flex;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--el-link-text-color);
+  &:hover {
+    color: var(--el-link-hover-text-color);
+  }
+}
+
+.v-button {
+  display: inline-flex;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid var(--el-border-color-base);
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.v-text {
+  display: inline-flex;
+}
+
+.v-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-y: overlay !important;
+  overflow-x: overlay !important;
+}
+
+.v-li {
+  flex: none;
+}
+
+.v-table {
+  display: flex;
+  .v-slot:first-child .v-table-column {
+    border-left: 1px solid #ccc;
+  }
+  &-column {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  &-head {
+    font-weight: bold;
+  }
+  &-cell {
+    border-top: 1px solid #ccc;
+  }
+}
+
+.v-slot {
+  position: relative;
+}
+
+.v-root {
+  position: relative !important;
+}

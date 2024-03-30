@@ -6,9 +6,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/visual-maker/',
   plugins: [vue()],
-  server: { // ← ← ← ← ← ←
-    host: '192.168.1.7' // ← 新增内容 ←
-    } ,// ← ← ← ← ← ←
+  // server: { // ← ← ← ← ← ←
+  //   host: '192.168.0.103' // ← 新增内容 ←
+  //   } ,// ← ← ← ← ← ←
   resolve: {
     alias: [
       {
